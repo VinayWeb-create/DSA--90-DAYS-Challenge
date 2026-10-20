@@ -1,42 +1,95 @@
-# Day 01: Computer Architecture & Foundational Execution Model
+# 🧭 Day 01: Step-by-Step Execution Guide
 
-> **Module:** 01_Computer_Science  
-> **Mission:** Master how computers execute code from disk to RAM to CPU, conquer Process vs. Thread & Stack vs. Heap, and establish your daily coding discipline.  
-> **Mentor Rule:** *No topic is marked "completed" until you can explain it in simple words, write it from memory, solve coding problems with it, and use it in a small project.*
-
----
-
-## 🎯 Today's Learning Goals
-By the end of today, you must master:
-1. **How Computers Execute Programs:** Source Code -> Interpreter/Bytecode -> Machine Code (Binary 0s and 1s) -> CPU Fetch-Decode-Execute cycle.
-2. **Hardware Triad:** CPU (Arithmetic Logic Unit & Registers), RAM (Volatile, fast working memory), Storage (SSD/HDD, non-volatile long term).
-3. **Binary & Memory Addressing:** Bits, bytes, ASCII encoding, memory addresses in hexadecimal.
-4. **Processes vs. Threads:** Operating System isolation, independent memory space vs. shared heap, lightweight concurrent workers.
-5. **Memory Allocation:** Stack Memory (LIFO, automatic stack frames, function call overhead) vs. Heap Memory (Dynamic allocation, pointers/references, Garbage Collection).
-6. **Core Python Building Blocks:** Variables, Data Types, Type Inspection, Operators, Control Flow, Functions, Modules, and File I/O.
-7. **Production Practicality:** 10 Hands-on exercises, 1 Complete Mini Project, and Top Product Company Interview Questions.
+> **Don't feel overwhelmed!** You do not need to read or open all files at once.  
+> Follow this exact **5-Step Order (1 to 5)**. Once you finish step 5, your Day 01 is 100% complete.
 
 ---
 
-## 🗂️ Day 01 File Navigation
-- [Theory.md](Theory.md) — Comprehensive, no-fluff explanation with memory diagrams and analogies.
-- [Examples.md](Examples.md) — Annotated code examples with memory breakdowns.
-- [Exercises.md](Exercises.md) — 10 progressive hands-on coding exercises.
-- [Assignment.md](Assignment.md) — 8 interview-level challenge problems.
-- [Mini_Project.md](Mini_Project.md) — Student Records Manager CLI with persistent file I/O.
-- [Interview.md](Interview.md) — ₹12 LPA level interview questions & model answers.
-- [Notes.md](Notes.md) — Cheatsheet summary matching your handwritten sheets.
-- [Resources.md](Resources.md) — Curated deep-dive docs, videos, and articles.
-- [Checklist.md](Checklist.md) — Your daily accountability tracking.
-- [Reflection.md](Reflection.md) — Daily engineering journal template.
-- [Instagram_Kit.md](Instagram_Kit.md) — Ready-to-post Instagram captions, carousel slides, and hashtags for `@codvinu.ai`.
+## 🚦 Your Step-by-Step Order for Today
+
+```
+[Step 1: Read Theory]  --->  [Step 2: Run Code Demos]  --->  [Step 3: Solve Exercises]  --->  [Step 4: Mini Project & Interview]  --->  [Step 5: Review & Post]
+     (20 mins)                     (15 mins)                        (30 mins)                          (30 mins)                           (10 mins)
+```
 
 ---
 
-## 🚀 Runnable Code Files
-- `01_execution_and_types.py` — Variables, data types, type inspection, and operators.
-- `02_control_flow_and_functions.py` — Decision branches, loops, functions, and modules.
-- `03_process_vs_threads.py` — Concurrent execution using Python's `threading` module.
-- `04_stack_vs_heap_memory.py` — Memory ID inspection (`id()`, `hex()`) verifying heap vs stack behavior.
-- `05_file_handling.py` — Safe file creation, reading, and appending.
-- `mini_project_student_cli.py` — Interactive CLI application demonstrating all Day 1 concepts.
+### 🟢 STEP 1: Understand the Concepts (20 mins)
+* Open and read: [**Theory.md**](Theory.md)  
+  *(If you want a quick 5-minute visual summary first, look at [**Notes.md**](Notes.md) and your handwritten poster!)*
+* **Focus on 3 main questions:**
+  1. How does code go from SSD ➡️ RAM ➡️ CPU?
+  2. What is the difference between a **Process** (isolated) and a **Thread** (shared)?
+  3. What is the difference between **Stack** (fast, LIFO function frames) and **Heap** (objects, dynamic)?
+
+---
+
+### 🟡 STEP 2: Watch the Code Run (15 mins)
+Open your terminal in VS Code and run the 5 demo scripts in [`code/`](code/):
+
+```bash
+cd "01_Computer_Science/Day01/code"
+
+python 01_execution_and_types.py          # See variables and memory IDs
+python 02_control_flow_and_functions.py    # See functions and loops
+python 03_process_vs_threads.py           # See 2 concurrent threads running
+python 04_stack_vs_heap_memory.py         # See why lists have different heap IDs
+python 05_file_handling.py                # See data saved to disk
+```
+*(Reference: [Examples.md](Examples.md) explains what each script is doing).*
+
+---
+
+### 🔵 STEP 3: Hands-On Practice (30 mins)
+* Open: [**Exercises.md**](Exercises.md)
+* Try solving the 10 questions from your handwritten notes.
+* If you get stuck on any question, check: [`code/exercises_solutions.py`](code/exercises_solutions.py)
+* Test the solutions anytime:
+  ```bash
+  python exercises_solutions.py
+  ```
+
+---
+
+### 🟣 STEP 4: Mini Project & Interview Prep (30 mins)
+* **Mini Project:** Open and run the interactive CLI:
+  ```bash
+  python mini_project_student_cli.py
+  ```
+  *(Reference: [Mini_Project.md](Mini_Project.md))*
+* **Interview Drill:** Read the 5 interview questions in [**Interview.md**](Interview.md).  
+  Say the answers out loud in English as if a Google or Amazon interviewer is asking you!
+
+---
+
+### 🔴 STEP 5: Daily Checklist, Reflection & Social Proof (10 mins)
+* Open [**Checklist.md**](Checklist.md) and check off what you completed today.
+* Fill in 3 quick lines in [**Reflection.md**](Reflection.md) (What you learned, what was cool).
+* Open [**Instagram_Kit.md**](Instagram_Kit.md):
+  - Copy the ready-made caption.
+  - Upload your handwritten poster or carousel images to **@codvinu.ai**.
+* **Commit your code to GitHub:**
+  ```bash
+  git add .
+  git commit -m "Day 01 Completed: Computer Science Foundations & Student CLI"
+  git push origin main
+  ```
+
+---
+
+## 📁 File Reference Map
+```
+01_Computer_Science/Day01/
+├── README.md               <-- YOU ARE HERE (Start and follow steps 1 to 5)
+├── Theory.md               <-- Step 1: Read concepts
+├── Notes.md                <-- Step 1 (Alternative): Quick cheatsheet
+├── Examples.md             <-- Step 2: Code explanations
+├── Exercises.md            <-- Step 3: 10 practice problems
+├── Assignment.md           <-- Optional: Extra challenge problems
+├── Mini_Project.md         <-- Step 4: Project details
+├── Interview.md            <-- Step 4: Top 5 interview Q&A
+├── Checklist.md            <-- Step 5: Mark completed items
+├── Reflection.md           <-- Step 5: Daily journal
+├── Instagram_Kit.md        <-- Step 5: Ready-to-copy social post
+└── code/                   <-- All runnable Python scripts (.py)
+```
