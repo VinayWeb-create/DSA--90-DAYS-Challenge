@@ -6,9 +6,7 @@
 # ──────────────────────────────────────────────────────────────────
 
 def is_harshad(n):
-    # Write your code here
     pass
-
 
 # ─── Test Cases ───
 if __name__ == "__main__":
